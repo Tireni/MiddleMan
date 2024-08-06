@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<title>MiddleMan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="Images/logo.png" type="image/icon type">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  background-color: white;
+  color: rgb(150, 69, 174);
+  line-height: 1.8;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Images/img.jpeg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" data-aos="fade-up"  data-aos-delay="50"
+data-aos-duration="800"
+data-aos-easing="ease-in-out">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" style="text-decoration: none;display: inline-flexbox;" class="w3-bar-item  w3-wide"><b><h3>Blossom<h3 style="color:darkorchid;">LTD<img src="Images/logo.png" style="height: 55px;width: 55px;"/></h3></h3></b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="margin-top: 10px;">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" >
+  <div class="w3-display-left w3-text-purple" style="padding:48px" data-aos="fade-left"  data-aos-delay="50"
+  data-aos-duration="800"
+  data-aos-easing="ease-in-out">
+    
+    <span class="w3-jumbo w3-hide-small" style="background-color: black;">Your Partner in Finance Management</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium" style="background-color: black;" >Your Partner in <br> Finance Management</span><br>
+    <span class="w3-large" style="background-color: black;">Let Us drive your growth and achieve your goals.</span>
+    <p><a href="#contact" class="w3-button w3-purple w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Partner with Us for Success</a></p>
+  </div> 
+
+</header>
+
+<br><br><br>
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about" data-aos="fade-up"  data-aos-delay="50"
+data-aos-duration="800"
+data-aos-easing="ease-in-out">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center w3-large">
+        BlossomLTD is a premier finance management firm committed to helping our clients achieve financial stability and growth. With years of experience and a team of seasoned professionals, we offer personalized financial solutions tailored to meet your unique needs.
+    
+    
+    
+    </p>
+   <center><p><a href="#contact" class="w3-button w3-purple w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Contact Us</a></p></center> 
+ 
+
+</div>
+<br><br><br>
+
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="services"data-aos="fade-up"  data-aos-delay="50"
+data-aos-duration="800"
+data-aos-easing="ease-in-out">
+  <h3 class="w3-center">Our Services</h3>
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <center>
+        <div class="w3-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/9165/9165643.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Financial Planning</h3>
+          
+          <p>We offer comprehensive financial planning services to help you achieve your long-term financial goals. Our experts will work with you to create a customized plan that aligns with your aspirations.</p>
+      
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2167/2167930.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Retirement Planning</h3>
+  
+          <p>Secure your future with our retirement planning services. We help you build a robust retirement plan to ensure a comfortable and financially stable retirement.</p>
+        
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/9200/9200700.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Debt Management</h3>
+        
+          <p>Our debt management services help you regain control of your finances. We provide strategies to reduce and manage your debt effectively.</p>
+        
+        </div>
+      </div>
+      </center>
+      
+    </div>
+  
+</div>
+
+
+<!-- Skills Section -->
+<div class="w3-container w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6"data-aos="fade-left"  data-aos-delay="50"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out">
+      <h3>Our Efficiency:</h3>
+    
+    </div>
+    <div class="w3-col m6" data-aos="fade-right"  data-aos-delay="50"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out">
+      <p class="w3-wide">Financial Planning</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-purple w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide">Retirement Planning</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-purple w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Debt Management</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-purple w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px" id="contact" data-aos="fade-down"  data-aos-delay="50"
+data-aos-duration="800"
+data-aos-easing="ease-in-out">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Nigeria, Abuja</p>
+    
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: blossomltd.official.00001@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-purple" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-purple w3-padding-64">
+
+  <div class="w3-xlarge w3-section">
+    <p>
+Copywright @BlossomLTD
+    </p><br>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
+
+  </div>
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
